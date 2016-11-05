@@ -15,6 +15,7 @@ public class Word implements CharGroup {
 
     public Word(String word) {
         Objects.requireNonNull(word, "'word' must not be null");
+        this.word = word;
 
         Map<Character, Integer> cnts = new HashMap<>();
         for (char c : word.toCharArray()) {
